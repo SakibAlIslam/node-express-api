@@ -8,9 +8,9 @@ const PORT = 5000;
 
 app.use(bodyParser.json());
 
-// app.get('/', (req, res) => {
-//     res.send('<h1>Nice</h1>')
-// })
+app.get('/', (req, res) => {
+    res.send('hello')
+})
 
 app.use('/users', userRoutes)
 
